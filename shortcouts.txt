@@ -1,0 +1,78 @@
+Shortcouts for Neovim:
+leader = space
+
+
+
+**VIM**
+'ss' horizontal split
+'sv' vertical split
+
+
+
+**LSPsaga:** 
+'g' + 'f' = preview_definition: Encuentra dónde fue declarada la función.
+'g' + 'r' = rename
+Lshift + 'k' =  brief: Breve resumen de la función, inputs y outputs.
+
+
+**Formatting:**
+Auto spaces: Elimina automaticamente los espacions sobrante y alinea el código.
+
+
+**AutoComplete (cmp)**
+Ctrl+'n' = down: bajar en la lista de sugerencias.
+Ctrl+'p' = up: subir en la lista de sugerencias.
+Tab = confirm: completar con el señalado.
+Ctrl + 'e' = close: cerrar el autocompletado.
+
+**defx**  ('s'+'f' to open)
+ENTER / l = open
+'c' = copy
+'m' = move
+'p' = paste
+'E' = vsplit
+'h' = cd ..
+'o' = open or close tree (idk)
+'K' = new directory
+'N' = new file
+'M' = new multiple files
+'C' = toggle columns
+'S' = Sort time
+'d' = remove
+'r' = rename
+'!' = execute command
+'x' = execute system
+'yy' = copy path
+'.i' = toggle ignored files
+'4' = cd
+'q' = quit 
+Space = select
+'*' = select all
+'cd' = cd local directory
+
+
+**GIT** 
+leader + 'ga' = git add
+leader + 'gs' = git status
+leader + 'gc' = git commit
+leader + 'gpl' = git pull
+leader + 'gpu' = git push
+leader + 'gw' = git write
+leader + 'gd' = git diff split
+
+
+
+
+**TELESCOPE*
+leader + 'f' = find files
+leader + 'r' = para buscar cualquier palabra de cualquier archivo
+leader + '7' = find buffers
+leader + 't' = find tags
+leader + ',' = resume
+leader + 'e' = diagnostico
+
+
+
+
+
+
