@@ -71,24 +71,20 @@ set formatoptions+=r
 
 " Highlights "{{{
 " ---------------------------------------------------------------------
-set cursorline
+"set cursorline
 "set cursorcolumn
 
 " Set cursor line color on visual mode
-highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
 
-highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
+" augroup BgHighlight
+"   autocmd!
+"   autocmd WinEnter * set cul
+" augroup END
 
-augroup BgHighlight
-  autocmd!
-  autocmd WinEnter * set cul
-  autocmd WinLeave * set nocul
-augroup END
-
-if &term =~ "screen"
-  autocmd BufEnter * if bufname("") !~ "^?[A-Za-z0-9?]*://" | silent! exe '!echo -n "\ek[`hostname`:`basename $PWD`/`basename %`]\e\\"' | endif
-  autocmd VimLeave * silent!  exe '!echo -n "\ek[`hostname`:`basename $PWD`]\e\\"'
-endif
+" if &term =~ "screen"
+"   autocmd BufEnter * if bufname("") !~ "^?[A-Za-z0-9?]*://" | silent! exe '!echo -n "\ek[`hostname`:`basename $PWD`/`basename %`]\e\\"' | endif
+"   autocmd VimLeave * silent!  exe '!echo -n "\ek[`hostname`:`basename $PWD`]\e\\"'
+" endif
 
 "}}}
 
@@ -140,9 +136,9 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
   set background=dark
   " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  "let g:neosolarized_termtrans=1
+ runtime ./colors/NeoSolarized.vim
+ runtime ./colors/monokai-pro.vim
 endif
 
 "}}}
@@ -150,30 +146,39 @@ endif
 " Extras "{{{
 " ---------------------------------------------------------------------
 set exrc
-
-
-" vim: set foldmethod=marker foldlevel=0:
-let g:python3_host_prog = "C:/Users/Jose Eduardo/anaconda3/python.exe"
-
 function! Termpy()
   exec winheight(0)/4."split" | terminal python %
 endfunction
-
 nnoremap <F5> :call Termpy() <CR>
-
 nmap ss :split<Return><C-w>w
 nmap sv :vsplit<Return><C-w>w
-
 "}}}
 
+"THEMES GRUVBOX
+" Example config in VimScript
+let g:gruvbox_baby_function_style = "NONE"
+let g:gruvbox_baby_keyword_style = "italic"
+let g:gruvbox_baby_background_color = "NONE"
+" Enable telescope theme
+let g:gruvbox_baby_telescope_theme = 1
+
+" Enable transparent mode
+let g:gruvbox_baby_transparent_mode = 1
+
+" colorscheme purify
+
+let g:sonokai_style = 'shusia'
+let g:sonokai_better_performance = 1
+let g:sonokai_transparent_background = 1 
+
+colorscheme gruvbox-baby
 
 
 
-
-
-
-
-
-
+" Neovide "{{{
+" ---------------------------------------------------------------------
+let g:neovide_transparency = 0.4
+" set guifont =Hack\ NF:h11.5 
+set guifont =Cascadia\ Code:h11
 
 

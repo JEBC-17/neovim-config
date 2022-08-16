@@ -12,5 +12,4 @@ if !exists('*fugitive#statusline')
   nnoremap <silent> <leader>gpu :Git push<CR>
 endif
 
-cnoreabbrev g Git
 cnoreabbrev gopen GBrowse

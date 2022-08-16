@@ -87,7 +87,7 @@ nvim_lsp.html.setup {
   capabilities = capabilities
   }
 
-nvim_lsp.pyright.setup {
+nvim_lsp.jedi_language_server.setup {
   on_attach=on_attach,
   capabilities=capabilities
   }
@@ -108,6 +108,10 @@ nvim_lsp.cssls.setup {
   capabilities = capabilities
   }
 nvim_lsp.intelephense.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+nvim_lsp.rust_analyzer.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }

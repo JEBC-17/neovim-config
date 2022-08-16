@@ -13,8 +13,6 @@ lua <<EOF
       end,
     },
     mapping = cmp.mapping.preset.insert({
-      ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-      ['<C-f>'] = cmp.mapping.scroll_docs(4),
       ['<C-space>'] = cmp.mapping.complete(),
       ['<C-e>'] = cmp.mapping.close(),
       ['<Tab>'] = cmp.mapping.confirm({

@@ -6,7 +6,7 @@ endif
 lua << EOF
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = {"css","cpp","php","tsx","sql","json","html","scss","java","python","javascript"},
+  ensure_installed = {"rust","css","cpp","php","tsx","sql","json","html","scss","java","python","javascript"},
 
 
 

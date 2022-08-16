@@ -20,8 +20,6 @@ Auto spaces: Elimina automaticamente los espacions sobrante y alinea el código.
 
 
 **AutoComplete (cmp)**
-Ctrl+'n' = down: bajar en la lista de sugerencias.
-Ctrl+'p' = up: subir en la lista de sugerencias.
 Tab = confirm: completar con el señalado.
 Ctrl + 'e' = close: cerrar el autocompletado.
 
@@ -63,7 +61,7 @@ leader + 'gd' = git diff split
 
 
 
-**TELESCOPE*
+**TELESCOPE**
 leader + 'f' = find files
 leader + 'r' = para buscar cualquier palabra de cualquier archivo
 leader + '7' = find buffers
@@ -71,7 +69,16 @@ leader + 't' = find tags
 leader + ',' = resume
 leader + 'e' = diagnostico
 
+**NERDTREE**
+leader + 'n' = open 
+Ctrl + 't' = toggle
+Ctrl + 'f' = nerdtree find
 
+**EASY MOTION**
+<leader><leader> +...
+'w' = move to the first letter of the words
+'f' + (any character) = move to the character
+'t' + (any character) = move previous to that character 
 
 
 
